@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 
 class App extends Component {
-  state
+  state = {
+    searchTerm: null,
+    characterList: []
+  }
   render() {
     return (
       <div className="App">
+      <h1>Star Wars</h1>
       </div>
     );
   }
