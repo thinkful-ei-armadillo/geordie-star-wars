@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Search from "./Search";
+import List from "./List";
 
 class App extends Component {
   state = {
@@ -26,9 +27,11 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.state);
     return (
       <div className="App">
         <Search userInput={this.userInput} />
+        <List characterList={this.state.characterList} />
       </div>
     );
   }
