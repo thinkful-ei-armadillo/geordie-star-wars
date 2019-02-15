@@ -1,0 +1,11 @@
+.Search {
+    margin: 0 auto;
+}
+
+form {
+    text-align: center;
+}
+
+label, input {
+    padding-right: 5px;
+}

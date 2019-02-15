@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import './List.css';
 
 class List extends Component {
 
     render () {
         console.log(this.props)
-        return(
+        return(            
             <ul>
                 {this.props.characterList.map(char =>
                     <li>

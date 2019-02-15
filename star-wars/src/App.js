@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Search from "./Search";
 import List from "./List";
+import ErrorBoundary from "./ErrorBoundary";
 
 class App extends Component {
   state = {
@@ -30,8 +31,10 @@ class App extends Component {
     console.log(this.state);
     return (
       <div className="App">
-        <Search userInput={this.userInput} />
-        <List characterList={this.state.characterList} />
+        <ErrorBoundary>
+          <Search userInput={this.userInput} />
+          <List characterList={this.state.characterList} />
+        </ErrorBoundary>
       </div>
     );
   }
